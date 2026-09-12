@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#07080c">
+<title>NEXORA — Future in your hands</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="noise"></div>
+<div class="topbar"><span>⚡ OFFRES EXCLUSIVES</span><span>Livraison partout au Maroc</span><span>Commande 100% WhatsApp</span></div>
+
+<header class="header" id="header">
+  <a href="#home" class="logo"><i>N</i><span><b>NEXORA</b><small>TECH & MOBILE</small></span></a>
+  <nav><a href="#home">Accueil</a><a href="#shop">Boutique</a><a href="#categories">Catégories</a><a href="#deals">Deals</a><a href="#contact">Contact</a></nav>
+  <div class="actions">
+    <button class="round" id="searchBtn">⌕</button>
+    <button class="round" id="favBtn">♡<sup id="favCount">0</sup></button>
+    <button class="cart" id="cartBtn">Panier <b id="cartCount">0</b></button>
+    <button class="hamb" id="hamb">☰</button>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobileNav"><a href="#home">Accueil</a><a href="#shop">Boutique</a><a href="#categories">Catégories</a><a href="#deals">Deals</a><a href="#contact">Contact</a></div>
+<div class="searchbar" id="searchbar"><span>⌕</span><input id="searchInput" placeholder="Rechercher iPhone, Samsung, MacBook..."><button id="closeSearch">×</button></div>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-copy reveal">
+    <div class="kicker"><span></span> NEXT-GEN TECHNOLOGY</div>
+    <h1>Technology<br><em>reimagined.</em></h1>
+    <p>Smartphones, laptops, tablettes et accessoires sélectionnés pour ceux qui veulent plus. Découvrez. Choisissez. Commandez.</p>
+    <div class="hero-buttons"><a class="btn primary" href="#shop">Explorer la boutique <b>↗</b></a><a class="btn secondary" href="#categories">Voir les catégories</a></div>
+    <div class="trust"><div><b>4.9/5</b><span>Clients satisfaits</span></div><div><b>24H</b><span>Réponse WhatsApp</span></div><div><b>100%</b><span>Commande directe</span></div></div>
+  </div>
+  <div class="hero-stage reveal">
+    <div class="halo h1"></div><div class="halo h2"></div>
+    <div class="device laptop"><div class="screen"><span>NEXORA OS</span><b>CREATE<br>WITHOUT<br>LIMITS.</b><small>Ultra performance</small></div></div>
+    <div class="device phone"><div class="dynamic"></div><div class="phone-screen"><small>09:41</small><b>16</b><span>PRO MAX</span></div></div>
+    <div class="float-card c1"><small>NEW DROP</small><b>iPhone 16 Pro</b><span>Disponible</span></div>
+    <div class="float-card c2"><b>−25%</b><span>sur une sélection</span></div>
+  </div>
+</section>
+
+<section class="ticker"><div>SMARTPHONES ✦ PC PORTABLES ✦ TABLETTES ✦ AUDIO ✦ GAMING ✦ ACCESSOIRES ✦ SMARTPHONES ✦ PC PORTABLES ✦ TABLETTES ✦</div></section>
+
+<section class="section" id="categories">
+  <div class="heading reveal"><div><div class="kicker"><span></span> SHOP BY CATEGORY</div><h2>Choose your <em>world.</em></h2></div><p>Une sélection pensée pour le travail, le gaming, la création et votre quotidien.</p></div>
+  <div class="cat-grid" id="catGrid"></div>
+</section>
+
+<section class="section shop" id="shop">
+  <div class="heading reveal"><div><div class="kicker"><span></span> THE COLLECTION</div><h2>Trending <em>now.</em></h2></div><a class="line-link" href="#shop" id="allProducts">Tout voir ↗</a></div>
+  <div class="toolbar reveal"><div id="filters"></div><select id="sort"><option value="featured">Recommandés</option><option value="priceAsc">Prix croissant</option><option value="priceDesc">Prix décroissant</option><option value="newest">Nouveautés</option></select></div>
+  <div class="products" id="products"></div>
+  <div class="empty" id="empty" hidden><strong>⌕</strong><h3>Rien trouvé</h3><p>Essayez un autre terme ou une autre catégorie.</p></div>
+</section>
+
+<section class="deal section" id="deals">
+  <div class="deal-inner reveal">
+    <div><div class="kicker light"><span></span> FLASH DROP</div><h2>Big tech.<br><em>Better prices.</em></h2><p>Une sélection d'offres disponibles pendant une durée limitée.</p><a href="#shop" class="btn light-btn">Découvrir les offres ↗</a></div>
+    <div class="timer"><small>FIN DE L'OFFRE</small><div><b id="dd">00</b><i>:</i><b id="hh">00</b><i>:</i><b id="mm">00</b><i>:</i><b id="ss">00</b></div><span>JOURS &nbsp; HEURES &nbsp; MIN &nbsp; SEC</span></div>
+  </div>
+</section>
+
+<section class="section experience">
+ <div class="heading reveal"><div><div class="kicker"><span></span> THE NEXORA EXPERIENCE</div><h2>More than a <em>store.</em></h2></div></div>
+ <div class="experience-grid">
+  <article class="experience-card reveal"><span>01</span><div class="big-icon">✦</div><h3>Curated tech</h3><p>Des références choisies pour leur design, leurs performances et leur rapport qualité-prix.</p></article>
+  <article class="experience-card reveal"><span>02</span><div class="big-icon">↯</div><h3>Instant contact</h3><p>Une question ? Écrivez-nous directement. Pas de formulaire interminable.</p></article>
+  <article class="experience-card reveal"><span>03</span><div class="big-icon">◎</div><h3>Easy ordering</h3><p>Votre panier est préparé automatiquement et envoyé au vendeur sur WhatsApp.</p></article>
+ </div>
+</section>
+
+<section class="marquee-brands"><div>APPLE　 SAMSUNG　 XIAOMI　 ASUS　 LENOVO　 HP　 JBL　 ANKER　 LOGITECH　</div></section>
+
+<section class="contact section" id="contact">
+ <div class="contact-inner reveal"><div><div class="kicker light"><span></span> READY WHEN YOU ARE</div><h2>Let's talk<br><em>tech.</em></h2></div><div><p>Besoin d'un conseil, d'un prix ou d'une disponibilité ? Notre WhatsApp est ouvert.</p><a id="contactWa" class="wa-btn" target="_blank">WhatsApp <b>↗</b></a></div></div>
+</section>
+</main>
+
+<footer><div class="footer-top"><div class="footer-brand"><a href="#home" class="logo"><i>N</i><span><b>NEXORA</b><small>TECH & MOBILE</small></span></a><p>Future-ready technology for everyday life.</p></div><div><h4>SHOP</h4><a href="#shop">Produits</a><a href="#categories">Catégories</a><a href="#deals">Promotions</a></div><div><h4>CONTACT</h4><a id="footerWa" target="_blank">WhatsApp</a><span>Lun — Sam · 09:00 — 19:00</span></div><div><h4>SOCIAL</h4><a href="#">Instagram</a><a href="#">Facebook</a><a href="#">TikTok</a></div></div><div class="footer-bottom">© 2026 NEXORA <span>Aucun paiement en ligne — commande finalisée directement avec le vendeur.</span></div></footer>
+
+<aside class="drawer" id="drawer"><div class="drawer-head"><div><div class="kicker"><span></span> YOUR SELECTION</div><h3>Panier</h3></div><button id="closeCart">×</button></div><div class="cart-list" id="cartList"></div><div class="cart-empty" id="cartEmpty"><b>🛒</b><h3>Votre panier est vide</h3><p>Ajoutez des produits pour préparer votre commande.</p></div><div class="cart-bottom" id="cartBottom"><div class="total"><span>Total estimé</span><b id="total">0 DH</b></div><p>Aucun paiement ici. Votre commande sera envoyée au vendeur via WhatsApp.</p><a id="orderWa" class="btn primary full" target="_blank">Commander sur WhatsApp ↗</a><button id="clearCart">Vider le panier</button></div></aside>
+<div class="backdrop" id="backdrop"></div>
+
+<div class="modal" id="modal"><div class="modal-card"><button class="modal-close" id="modalClose">×</button><div id="modalBody"></div></div></div>
+<div class="toast" id="toast">Ajouté au panier ✓</div>
+<script src="script.js"></script>
+</body></html>
